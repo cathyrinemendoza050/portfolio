@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <!-- Placeholder project screenshot: replace with a real screenshot -->
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#B388FF"/><stop offset="1" stop-color="#F25CA2"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#g)"/>
+  <circle cx="70" cy="80" r="40" fill="#fff" opacity=".18"/>
+  <circle cx="740" cy="430" r="60" fill="#fff" opacity=".15"/>
+  <circle cx="720" cy="70" r="14" fill="#fff" opacity=".3"/>
+  <g transform="translate(110 60)">
+    <rect width="580" height="360" rx="22" fill="#FFFFFF"/>
+    <path d="M0 22 A22 22 0 0 1 22 0 H558 A22 22 0 0 1 580 22 V46 H0 Z" fill="#FFF0F7"/>
+    <circle cx="28" cy="23" r="7" fill="#F25CA2"/>
+    <circle cx="50" cy="23" r="7" fill="#FFB3D9"/>
+    <circle cx="72" cy="23" r="7" fill="#B388FF"/>
+    <rect x="110" y="13" width="360" height="20" rx="10" fill="#FFFFFF"/>
+    <rect x="34" y="80" width="230" height="26" rx="13" fill="#B388FF"/>
+    <rect x="34" y="122" width="270" height="12" rx="6" fill="#E4D4FF"/>
+    <rect x="34" y="144" width="220" height="12" rx="6" fill="#E4D4FF"/>
+    <rect x="34" y="176" width="120" height="34" rx="17" fill="#F25CA2"/>
+    <rect x="340" y="76" width="206" height="140" rx="18" fill="#FFD6E8"/>
+    <path d="M443 177.2 C401.4 146 409.2 114.8 435.2 117.4 C440.4 117.4 443 122.6 443 125.2 C443 122.6 445.6 117.4 450.8 117.4 C476.8 114.8 484.6 146 443 177.2 Z" fill="#F25CA2"/>
+    <rect x="34" y="244" width="160" height="88" rx="16" fill="#FFF0F7"/>
+    <rect x="210" y="244" width="160" height="88" rx="16" fill="#F3ECFF"/>
+    <rect x="386" y="244" width="160" height="88" rx="16" fill="#FFF0F7"/>
+  </g>
+  <text x="400" y="466" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#fff">Uncle Brew&#39;s Coffee and Milk Tea Website</text>
+</svg>

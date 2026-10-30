@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- Placeholder profile picture: replace with your own photo! -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFD6E8"/><stop offset="1" stop-color="#E4D4FF"/>
+    </linearGradient>
+    <linearGradient id="shirt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FF8FC7"/><stop offset="1" stop-color="#B388FF"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#bg)"/>
+  <circle cx="80" cy="90" r="6" fill="#fff" opacity=".8"/>
+  <circle cx="330" cy="70" r="4" fill="#fff" opacity=".8"/>
+  <circle cx="345" cy="250" r="5" fill="#fff" opacity=".7"/>
+  <!-- hair (back) -->
+  <path d="M118 210 C105 115 165 78 202 78 C255 78 300 118 288 212 L296 300 L106 300 Z" fill="#6A3FD9"/>
+  <!-- shoulders -->
+  <path d="M68 400 C74 322 128 286 200 286 C272 286 326 322 332 400 Z" fill="url(#shirt)"/>
+  <!-- neck -->
+  <rect x="180" y="238" width="40" height="60" rx="18" fill="#F7D3BE"/>
+  <!-- face -->
+  <circle cx="200" cy="185" r="72" fill="#FFE5D4"/>
+  <!-- bangs -->
+  <path d="M126 180 C126 118 168 98 205 100 C248 102 278 132 274 180 C252 152 222 140 202 126 C186 152 160 168 126 180 Z" fill="#6A3FD9"/>
+  <!-- bow -->
+  <path d="M252 104 L282 84 L284 124 Z" fill="#F25CA2"/>
+  <path d="M252 104 L226 80 L222 120 Z" fill="#F25CA2"/>
+  <circle cx="252" cy="104" r="9" fill="#FF8FC7"/>
+  <!-- eyes -->
+  <ellipse cx="174" cy="196" rx="8" ry="10" fill="#4A2C5A"/>
+  <ellipse cx="226" cy="196" rx="8" ry="10" fill="#4A2C5A"/>
+  <circle cx="177" cy="192" r="3" fill="#fff"/>
+  <circle cx="229" cy="192" r="3" fill="#fff"/>
+  <!-- blush -->
+  <ellipse cx="158" cy="218" rx="13" ry="7" fill="#FF8FC7" opacity=".55"/>
+  <ellipse cx="242" cy="218" rx="13" ry="7" fill="#FF8FC7" opacity=".55"/>
+  <!-- smile -->
+  <path d="M186 222 Q200 236 214 222" stroke="#4A2C5A" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- heart on shirt -->
+  <path d="M200 352 C178 336 182 318 196 320 C199 320 200 323 200 325 C200 323 201 320 204 320 C218 318 222 336 200 352 Z" fill="#fff" opacity=".9"/>
+  <text x="200" y="380" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#fff">your photo here</text>
+</svg>

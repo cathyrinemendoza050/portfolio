@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cathyrine R. Mendoza | Portfolio</title>
+  <meta name="description" content="Portfolio of Cathyrine R. Mendoza, a fourth-year BS Computer Science student at Biliran Province State University: achievements, certificates, skills, and projects including CrabLens and Uncle Brew's.">
+  <meta name="author" content="Cathyrine R. Mendoza">
+  <meta name="theme-color" content="#F8D3E0">
+  <link rel="canonical" href="https://cathyrinemendoza.github.io/portfolio/">
+
+  <!-- Sharing preview (Facebook, Messenger, etc.) — image links must be full https:// addresses -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Cathyrine R. Mendoza | Portfolio">
+  <meta property="og:title" content="Cathyrine R. Mendoza | Portfolio">
+  <meta property="og:description" content="Fourth-year BS Computer Science student at Biliran Province State University. See my achievements, skills, and projects.">
+  <meta property="og:url" content="https://cathyrinemendoza.github.io/portfolio/">
+  <meta property="og:image" content="https://cathyrinemendoza.github.io/portfolio/assets/images/profile.jpg">
+  <meta property="og:image:alt" content="Photo of Cathyrine R. Mendoza">
+  <meta property="og:image:width" content="720">
+  <meta property="og:image:height" content="954">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Cathyrine R. Mendoza | Portfolio">
+  <meta name="twitter:description" content="Fourth-year BS Computer Science student at Biliran Province State University. See my achievements, skills, and projects.">
+  <meta name="twitter:image" content="https://cathyrinemendoza.github.io/portfolio/assets/images/profile.jpg">
+
+  <!-- Favicon: pink-to-purple circle with a white heart -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+  <script>
+    (function () {
+      var root = document.documentElement;
+      root.classList.add("js");
+      var theme = "light";
+      try { theme = localStorage.getItem("theme") || "light"; } catch (e) {}
+      root.setAttribute("data-theme", theme);
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Playfair Display (elegant headings), Great Vibes (script accents), Montserrat (body text) -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="is-loading">
+  <noscript><style>.loader { display: none; }</style></noscript>
+
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__stage">
+      <div class="loader__spinner" aria-hidden="true"></div>
+    </div>
+    <p class="loader__text">Loading<span>.</span><span>.</span><span>.</span></p>
+  </div>
+
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- Soft blush background with flowing "silk" lines -->
+  <div class="bg-layer" aria-hidden="true">
+    <div class="bg-gradient"></div>
+    <svg class="bg-swirls" viewBox="0 0 1440 900" preserveAspectRatio="none">
+      <path d="M-40 160 C 260 40, 520 300, 820 170 S 1300 40, 1500 140"/>
+      <path d="M-40 200 C 280 90, 540 340, 840 210 S 1310 90, 1500 190"/>
+      <path d="M-60 760 C 240 640, 560 860, 900 720 S 1320 600, 1500 700"/>
+      <path d="M-60 800 C 260 690, 580 900, 920 770 S 1330 650, 1500 750"/>
+    </svg>
+  </div>
+
+  <div class="fx-layer" id="fxLayer" aria-hidden="true"></div>
+
+  <header class="navbar" id="navbar">
+    <nav class="container nav" aria-label="Main">
+      <a href="#home" class="nav__logo">
+        <span class="nav__mark" aria-hidden="true">C</span>
+        <span data-profile="firstName">Cathyrine</span>
+      </a>
+
+      <ul class="nav__links" id="navLinks">
+        <li><a class="nav__link" href="#home">Home</a></li>
+        <li><a class="nav__link" href="#about">About</a></li>
+        <li><a class="nav__link" href="#achievements">Achievements</a></li>
+        <li><a class="nav__link" href="#skills">Skills</a></li>
+        <li><a class="nav__link" href="#projects">Projects</a></li>
+        <li><a class="nav__link" href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav__actions">
+        <button class="icon-btn theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        </button>
+
+        <button class="icon-btn menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+          <span class="menu-line"></span><span class="menu-line"></span><span class="menu-line"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero__bubbles" id="heroBubbles" aria-hidden="true"></div>
+
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <p class="hero__hello reveal">Hello, I’m</p>
+          <h1 class="hero__name reveal" style="--delay: 80ms"><span data-profile="name">Cathyrine R. Mendoza</span></h1>
+          <span class="title-bar reveal" style="--delay: 120ms" aria-hidden="true"></span>
+
+          <p class="hero__role reveal" style="--delay: 160ms">
+            <span id="typing" aria-hidden="true"></span><span class="caret" aria-hidden="true"></span>
+            <span class="sr-only" id="rolesText"></span>
+          </p>
+
+          <p class="hero__tagline reveal" style="--delay: 240ms" data-profile="tagline">I like ideas that turn imagination into reality, creativity into possibilities, and dreams into something meaningful. I believe that every great achievement starts with a simple idea, a little courage, and the willingness to learn.</p>
+          <p class="hero__school reveal" style="--delay: 300ms">
+            <span data-profile="course">BS Computer Science, 4th Year</span> · <span data-profile="school">Biliran Province State University</span>
+          </p>
+
+          <div class="hero__buttons reveal" style="--delay: 380ms">
+            <a href="#achievements" class="btn btn--primary">View achievements</a>
+            <a href="#contact" class="btn btn--outline">Get in touch</a>
+          </div>
+        </div>
+
+        <!-- Photo in an arch frame with a soft pink circle behind it -->
+        <div class="hero__photo reveal reveal--zoom" style="--delay: 160ms">
+          <span class="photo-backdrop" aria-hidden="true"></span>
+          <div class="photo-frame">
+            <img id="profilePhoto" src="assets/images/profile.jpg" alt="Photo of Cathyrine R. Mendoza" width="720" height="954">
+          </div>
+          <span class="photo-sparkle photo-sparkle--1" aria-hidden="true">✦</span>
+          <span class="photo-sparkle photo-sparkle--2" aria-hidden="true">✧</span>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-hint" aria-label="Scroll to About">
+        <span class="scroll-hint__mouse"></span>
+      </a>
+    </section>
+
+    <section id="about" class="section section--alt">
+      <div class="container about">
+        <!-- Left: photo in an arch frame with a pink circle behind it -->
+        <div class="about__side reveal reveal--left">
+          <span class="about__circle" aria-hidden="true"></span>
+          <div class="about__photo">
+            <img id="aboutPhoto" src="assets/images/about.jpg" alt="Photo of Cathyrine R. Mendoza" width="1536" height="2048" loading="lazy">
+          </div>
+          <span class="photo-sparkle photo-sparkle--1" aria-hidden="true">✦</span>
+          <span class="photo-sparkle photo-sparkle--2" aria-hidden="true">✧</span>
+        </div>
+
+        <!-- Right: title + bio + interests -->
+        <div class="about__text reveal reveal--right" style="--delay: 120ms">
+          <header class="section__head">
+            <span class="section__kicker">Profile</span>
+            <h2 class="section__title">About <span class="script">Me</span></h2>
+            <span class="title-bar" aria-hidden="true"></span>
+          </header>
+          <div class="about__bio" id="aboutBio"></div>
+
+          <h3 class="about__heading">Interests</h3>
+          <ul class="pills" id="funFacts"></ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="achievements" class="section">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__kicker">Credentials</span>
+          <h2 class="section__title">My <span class="script">Achievements</span></h2>
+          <span class="title-bar" aria-hidden="true"></span>
+          <p class="section__subtitle">Certificates, competitions, and academic work. Open a card for the full record.</p>
+        </header>
+
+        <div class="filters reveal" id="achievementFilters" role="group" aria-label="Filter achievements by category"></div>
+
+        <div class="card-grid" id="achievementGrid"></div>
+        <p class="empty-state" id="achievementEmpty" hidden>No items in this category yet.</p>
+      </div>
+    </section>
+
+    <section id="skills" class="section section--alt">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__kicker">Capabilities</span>
+          <h2 class="section__title">My <span class="script">Skills</span></h2>
+          <span class="title-bar" aria-hidden="true"></span>
+        </header>
+
+        <!-- Arch-shaped skill cards (created by main.js from SKILLS in data.js) -->
+        <div class="skills-group">
+          <h3 class="skills__group-title reveal">Technical</h3>
+          <div class="skill-arches" id="techSkills"></div>
+        </div>
+        <div class="skills-group">
+          <h3 class="skills__group-title reveal">Professional</h3>
+          <div class="skill-arches" id="softSkills"></div>
+        </div>
+
+        <p class="skills__summary reveal" id="skillsSummary"></p>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__kicker">Selected work</span>
+          <h2 class="section__title">My <span class="script">Projects</span></h2>
+          <span class="title-bar" aria-hidden="true"></span>
+        </header>
+
+        <div class="card-grid" id="projectGrid"></div>
+      </div>
+    </section>
+
+    <section id="contact" class="section section--alt">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__kicker">Connect</span>
+          <h2 class="section__title">Contact <span class="script">Me</span></h2>
+          <span class="title-bar" aria-hidden="true"></span>
+        </header>
+
+        <div class="contact">
+          <div class="card contact__info reveal reveal--left">
+            <h3>Let’s work together</h3>
+            <p>For opportunities, collaborations, or questions about my work, send a message or reach me by email.</p>
+            <a class="contact__email" data-profile="email" href="mailto:cathyrinemendoza553@gmail.com">cathyrinemendoza553@gmail.com</a>
+            <p class="contact__label">Online</p>
+            <div class="socials" id="socials"></div>
+          </div>
+
+          <form class="card contact__form reveal reveal--right" id="contactForm" style="--delay: 80ms">
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="name">Name</label>
+                <input class="form-input" id="name" name="name" type="text" placeholder="Your name" autocomplete="name" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="email">Email</label>
+                <input class="form-input" id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="subject">Subject</label>
+              <input class="form-input" id="subject" name="subject" type="text" placeholder="Project inquiry">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="message">Message</label>
+              <textarea class="form-input" id="message" name="message" rows="5" placeholder="How can I help?" required></textarea>
+            </div>
+            <button class="btn btn--primary btn--block" type="submit">Send message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__text">
+        <span data-profile="name">Cathyrine R. Mendoza</span>
+      </p>
+      <p class="footer__small">© <span id="year">2026</span> · HTML, CSS &amp; JavaScript</p>
+    </div>
+    <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+    </button>
+  </footer>
+
+  <div class="modal" id="achievementModal" aria-hidden="true">
+    <div class="modal__backdrop" data-close-modal></div>
+    <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="icon-btn modal__close" type="button" data-close-modal aria-label="Close">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <div class="modal__media" id="modalMedia"></div>
+      <div class="modal__body">
+        <div class="modal__meta">
+          <span class="badge" id="modalCategory"></span>
+          <span class="modal__date" id="modalDate"></span>
+        </div>
+        <h3 class="modal__title" id="modalTitle"></h3>
+        <p class="modal__desc" id="modalDesc"></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
