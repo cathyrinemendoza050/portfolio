@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Tells Google which pages this website has. Submit it in Google Search Console. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://veighlat-cmd.github.io/portfolio/</loc>
+    <lastmod>2026-10-30</lastmod>
+  </url>
+</urlset>
