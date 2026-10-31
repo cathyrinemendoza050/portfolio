@@ -198,7 +198,7 @@ const PROJECTS = [
   },
   {
     title: "CRABLENS",
-    description: "A mobile application that uses YOLOv8 and MobileNetV2 to detect crabs and classify their species.",
+    description: "A mobile application that uses YOLOv8 and MobileNetV2 to detect crabs and classify their species. This is our thesis project, and I served as the Team Leader.",
     image: "assets/images/crablens-1-splash.jpg",
     coverPosition: "center 50%",   // show the middle of this tall screenshot (where the logo is) on the card
     gallery: [
