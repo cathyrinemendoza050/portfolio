@@ -50,7 +50,6 @@ const PROFILE = {
 
   // Fun facts: these show up as cute pill badges
   funFacts: [
-    "Reading",
     "Music",
     "Quiet, focused work",
     "Continuous learning",
