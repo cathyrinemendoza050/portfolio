@@ -510,20 +510,23 @@ function renderSkills() {
 
   observeReveal($$(".skill-card"));
 
-  // Fill each card's bar the first time it scrolls into view
-  const skillObserver = new IntersectionObserver((entries, observer) => {
+  // Fill each card's bar when it scrolls into view, empty it when it leaves
+  const skillObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-      if (!entry.isIntersecting) return;
-      animateSkill(entry.target);
-      observer.unobserve(entry.target);   // only animate once
+      if (entry.intersectionRatio >= 0.5) animateSkill(entry.target);
+      else if (!entry.isIntersecting) resetSkill(entry.target);
     });
-  }, { threshold: 0.5 });
+  }, { threshold: [0, 0.5] });
 
   $$(".skill-card").forEach((el) => skillObserver.observe(el));
 }
 
 function animateSkill(card) {
   $(".skill-card__fill", card).style.width = `${card.dataset.level}%`;
+}
+
+function resetSkill(card) {
+  $(".skill-card__fill", card).style.width = "0%";
 }
 
 
@@ -754,16 +757,25 @@ function initHeroBubbles() {
    12. SCROLL REVEAL — adds .is-visible when an element scrolls into view
    (the CSS then plays a fade/slide animation)
    ================================================================= */
-const revealObserver = new IntersectionObserver((entries, observer) => {
+const revealObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
-    if (!entry.isIntersecting) return;
-    entry.target.classList.add("is-visible");
-    observer.unobserve(entry.target);   // reveal only once
+    if (entry.isIntersecting) entry.target.classList.add("is-visible");
   });
 }, { threshold: 0.12, rootMargin: "0px 0px -40px 0px" });
 
+// Reset once an element is fully off-screen, so it animates again next time.
+// (A separate observer with no margin, so the slide-in can't flicker it off.)
+const hideObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) entry.target.classList.remove("is-visible");
+  });
+});
+
 function observeReveal(elements) {
-  elements.forEach((el) => revealObserver.observe(el));
+  elements.forEach((el) => {
+    revealObserver.observe(el);
+    hideObserver.observe(el);
+  });
 }
 
 
