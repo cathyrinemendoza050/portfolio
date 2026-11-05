@@ -215,9 +215,9 @@ const PROJECTS = [
   {
     title: "SK Voting System",
     description: "A desktop voting system for the Sangguniang Kabataan (SK) election. An admin logs in, voters choose their SK Chairman and SK Kagawad candidates, and the system counts and shows the votes for each candidate. This was a group project.",
-    image: "assets/images/sk-voting-2-ballot.jpg",
+    image: "assets/images/sk-voting-1-login.jpg",
     gallery: [
-      "assets/images/sk-voting-1-login.jpg",
+      "assets/images/sk-voting-2-ballot.jpg",
     ],
     tags: ["Desktop App", "Windows Forms", "Voting System"],
     link: "",
