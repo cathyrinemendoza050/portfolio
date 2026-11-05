@@ -212,5 +212,15 @@ const PROJECTS = [
     tags: ["Mobile App", "YOLOv8", "MobileNetV2", "Machine Learning"],
     link: "",
   },
+  {
+    title: "SK Voting System",
+    description: "A desktop voting system for the Sangguniang Kabataan (SK) election. An admin logs in, voters choose their SK Chairman and SK Kagawad candidates, and the system counts and shows the votes for each candidate. This was a group project.",
+    image: "assets/images/sk-voting-2-ballot.jpg",
+    gallery: [
+      "assets/images/sk-voting-1-login.jpg",
+    ],
+    tags: ["Desktop App", "Windows Forms", "Voting System"],
+    link: "",
+  },
 
 ];
