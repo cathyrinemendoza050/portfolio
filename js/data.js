@@ -27,7 +27,7 @@ const PROFILE = {
   photo: "assets/images/profile.jpg?v=2026-11-06",
 
   // The picture shown in the About Me section
-  aboutPhoto: "assets/images/about.jpg",
+  aboutPhoto: "assets/images/profile.jpg?v=2026-11-06",
 
   // The typing animation in the hero cycles through these (keep 3 or more)
   roles: [
