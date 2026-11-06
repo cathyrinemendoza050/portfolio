@@ -1329,16 +1329,6 @@ textarea {
 .skill-card:hover { transform: translateY(-6px); }
 .skill-card:hover .skill-card__inner { box-shadow: var(--shadow-lg); }
 
-/* Summary sentence under the cards */
-.skills__summary {
-  max-width: 46rem;
-  margin: 0.5rem auto 0;
-  text-align: center;
-  font-size: 1.1rem;
-  line-height: 1.7;
-  color: var(--text);
-}
-
 
 /* =================================================================
    11. PROJECTS
@@ -1788,7 +1778,6 @@ textarea.form-input {
   .form-row { grid-template-columns: 1fr; gap: 0; }
 
   .skill-card { flex-basis: 260px; max-width: 300px; }
-  .skills__summary { font-size: 1rem; }
 
   .modal__body { padding: 1.3rem 1.3rem 1.6rem; }
   .modal__title { font-size: 1.3rem; }

@@ -505,7 +505,6 @@ function skillCardHTML(skill, i) {
 function renderSkills() {
   $("#techSkills").innerHTML = (SKILLS.technical || []).map(skillCardHTML).join("");
   $("#softSkills").innerHTML = (SKILLS.soft || []).map(skillCardHTML).join("");
-  $("#skillsSummary").textContent = SKILLS.summary || "";
 
   observeReveal($$(".skill-card"));
 

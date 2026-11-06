@@ -164,7 +164,6 @@ const SKILLS = {
     { name: "Communication",   level: 85, description: "I share ideas clearly and listen openly to feedback." },
     { name: "Problem Solving", level: 80, description: "I break problems into small steps and work through them patiently." },
   ],
-  summary: "Clean and responsive web pages, friendly interface design, and reliable teamwork that turns ideas into meaningful projects.",
 };
 
 
