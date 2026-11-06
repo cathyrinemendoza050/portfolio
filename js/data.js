@@ -24,7 +24,7 @@ const PROFILE = {
 
   // Your photo. Put your picture in assets/images/ and change the file name here.
   // Example: "assets/images/me.jpg"
-  photo: "assets/images/profile.jpg",
+  photo: "assets/images/profile.jpg?v=2026-11-06",
 
   // The picture shown in the About Me section
   aboutPhoto: "assets/images/about.jpg",
@@ -43,7 +43,7 @@ const PROFILE = {
 
   // About Me paragraphs: each "..." becomes its own paragraph
   bio: [
-    "Hi! I'm Cathyrine R. Mendoza, a fourth-year Bachelor of Science in Computer Science student at Biliran Province State University. I love reading books and listening to music because they help me relax and enjoy my free time. I also enjoy designing using Canva and Figma, where I can express my creativity by creating visual content, exploring different layouts, and bringing ideas to life. Although coding is not really my favorite thing to do, I'm willing to learn more about it and improve my skills as I continue my journey in Computer Science.",
+    "Hi! I'm Cathyrine R. Mendoza, a fourth-year Bachelor of Science in Computer Science student at Biliran Province State University. I love designing using Canva and Figma, where I can express my creativity by creating visual content, exploring different layouts, and bringing ideas to life. Although coding is not really my favorite thing to do, I'm willing to learn more about it and improve my skills as I continue my journey in Computer Science.",
 
     "I'm also interested in exploring new things, discovering new ideas, and learning from different experiences. I believe that learning is a continuous process, and I'm always open to improving myself, especially in areas where I still need to grow. As I continue my studies, I hope to gain more knowledge, develop my abilities, and become more confident in facing new challenges.",
   ],
