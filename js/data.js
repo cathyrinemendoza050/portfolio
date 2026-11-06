@@ -189,7 +189,7 @@ const PROJECTS = [
       "assets/images/project-uncle-brew-products.png",
       "assets/images/project-uncle-brew-order.png",
     ],
-    tags: ["Website", "Marketing System"],
+    tags: ["Website", "HTML", "CSS", "Python", "MySQL", "Marketing System"],
     link: "",
   },
   {
