@@ -141,21 +141,19 @@ const ACHIEVEMENTS = [
    4) SKILLS 💪
    Each skill is shown as an arch-shaped card.
      name        → the skill (shown in capital letters)
+     logo        → optional picture shown instead of the name,
+                   e.g. "assets/images/skill-html.png"
      description → one short sentence about it
      level       → a number from 0 to 100; the dark bar at the bottom
                    of the card fills up to this amount
-   summary → the sentence shown under all the cards
    ----------------------------------------------------------------- */
 const SKILLS = {
   technical: [
     // ADD NEW TECHNICAL SKILLS HERE — copy one line and edit it
-    { name: "HTML",       level: 90, description: "I structure web pages with clean, meaningful markup." },
-    { name: "CSS",        level: 85, description: "I style layouts that look good and adapt to any screen size." },
-    { name: "JavaScript", level: 75, description: "I add interactivity and simple logic to make pages feel alive." },
-    { name: "Python",     level: 70, description: "I use Python for programming tasks and machine learning projects." },
-    { name: "Java",       level: 65, description: "I have basic knowledge of Java, including the fundamentals of object-oriented programming." },
-    { name: "UI/UX Design (Figma)", level: 80, description: "I design friendly, easy-to-use interfaces in Figma." },
-    { name: "Canva",      level: 85, description: "I enjoy using Canva to create creative and visually appealing designs, presentations, posters, and other visual content." },
+    { name: "HTML",       logo: "assets/images/skill-html.png",  level: 90, description: "I structure web pages with clean, meaningful markup." },
+    { name: "CSS",        logo: "assets/images/skill-css.png",   level: 85, description: "I style layouts that look good and adapt to any screen size." },
+    { name: "UI/UX Design (Figma)", logo: "assets/images/skill-figma.png", level: 80, description: "I design friendly, easy-to-use interfaces in Figma." },
+    { name: "Canva",      logo: "assets/images/skill-canva.png", level: 85, description: "I enjoy using Canva to create creative and visually appealing designs, presentations, posters, and other visual content." },
   ],
   soft: [
     // ADD NEW SOFT SKILLS HERE — copy one line and edit it

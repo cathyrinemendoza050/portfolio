@@ -1305,6 +1305,16 @@ textarea {
   color: var(--heading);
 }
 
+/* Round logo shown instead of the skill name */
+.skill-card__logo {
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: -1.2rem auto 0;
+  border-radius: 50%;
+  box-shadow: var(--shadow-sm);
+}
+
 .skill-card__desc {
   margin: 0;
   font-size: 0.82rem;

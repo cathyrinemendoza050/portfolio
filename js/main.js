@@ -492,7 +492,9 @@ function skillCardHTML(skill, i) {
   return `
     <article class="skill-card reveal" data-level="${level}" style="--delay: ${i * 90}ms">
       <div class="skill-card__inner">
-        <h4 class="skill-card__name">${escapeHTML(skill.name)}</h4>
+        <h4 class="skill-card__name">${skill.logo
+          ? `<img class="skill-card__logo" src="${escapeHTML(skill.logo)}" alt="${escapeHTML(skill.name)}" width="64" height="64" loading="lazy">`
+          : escapeHTML(skill.name)}</h4>
         <p class="skill-card__desc">${escapeHTML(skill.description || "")}</p>
       </div>
       <div class="skill-card__bar" role="progressbar" aria-label="${escapeHTML(skill.name)} level"
