@@ -184,7 +184,6 @@ function renderProfile() {
   $("#rolesText").textContent = (PROFILE.roles || []).join(", ");
 
   document.title = `${PROFILE.name} | Portfolio`;
-  $("#year").textContent = new Date().getFullYear();
 }
 
 

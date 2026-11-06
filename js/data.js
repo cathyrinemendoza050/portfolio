@@ -67,9 +67,8 @@ const PROFILE = {
    ----------------------------------------------------------------- */
 const SOCIALS = [
   { name: "Email",    icon: "email",    url: "mailto:cathyrinemendoza553@gmail.com" },
-  { name: "GitHub",   icon: "github",   url: "https://github.com/your-username" },
-  { name: "LinkedIn", icon: "linkedin", url: "https://www.linkedin.com/in/your-username" },
-  { name: "Facebook", icon: "facebook", url: "https://www.facebook.com/your-username" },
+  { name: "LinkedIn", icon: "linkedin", url: "https://www.linkedin.com/in/cathyrine-mendoza-3b3835449" },
+  { name: "Instagram", icon: "instagram", url: "https://www.instagram.com/cathyrine_mnda/" },
 ];
 
 
