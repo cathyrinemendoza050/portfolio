@@ -182,7 +182,7 @@ const PROJECTS = [
   // ADD NEW PROJECTS HERE — copy one block (from { to },) and edit it
   {
     title: "BotoKo — Student Council Voting System",
-    description: "A web-based voting system for the Student Council Election. Voters log in with the Voter ID given by COMELEC, choose one candidate for each position, review their ballot, and get a receipt code after voting. A live results page shows the votes cast, voter turnout, and each candidate's votes with charts.",
+    description: "A web-based voting system for the Student Council Election. Voters log in with the Voter ID given by COMELEC, choose one candidate for each position, review their ballot, and get a receipt code after voting. A live results page shows the votes cast, voter turnout, and each candidate's votes with charts. This was a group project.",
     image: "assets/images/botoko-1-login.jpg",
     gallery: [
       "assets/images/botoko-2-ballot.jpg",
