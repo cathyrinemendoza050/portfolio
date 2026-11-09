@@ -112,6 +112,13 @@ const ACHIEVEMENTS = [
     gallery: ["assets/images/cert-cisco-networking-basics-credential.png"],
   },
   {
+    title: "Thesis Preparation with the Use of Trending Tools and Industry Practices",
+    date: "2025-10-06",
+    category: "Certificate",
+    description: "Completed the Seminar-Workshop on \"Thesis Preparation with the Use of Trending Tools and Industry Practices\" on October 6–7, 2025, organized by the Computer Science Society of the School of Technology and Computer Studies and held at the Student Center, Biliran Province State University.",
+    image: "assets/images/cert-thesis-preparation-seminar.jpg",
+  },
+  {
     title: "Integrated OS — Be More Digi-TALINO Webinar",
     date: "2025-09-05",
     category: "Certificate",
@@ -125,6 +132,13 @@ const ACHIEVEMENTS = [
     description: "Received a Certificate of Recognition for Most Informative Video at \"Pagpakabana ha Kinaiyahan: A Science, Technology, and Society Environmental Awareness Video Showing\" held at the CSS Laboratory, Biliran Province State University.\nTheme: \"Promoting Environmental Awareness, Understanding Social Impact, and Fostering Sustainable Action.\"",
     image: "assets/images/award-most-informative-video.jpg",
     gallery: ["assets/images/award-most-informative-video-group.jpg"],
+  },
+  {
+    title: "Mastering English Foundations, Academic Integrity, and Gender-Fair Writing",
+    date: "2025-04-29",
+    category: "Certificate",
+    description: "Completed the Seminar-Workshop on \"Mastering English Foundations, Upholding Academic Integrity, and Advancing Gender-Fair Writing\" on April 29, 2025, organized by the Computer Science Society of the School of Technology and Computer Studies and held at the Student Center, Biliran Province State University.",
+    image: "assets/images/cert-mastering-english-foundations.jpg",
   },
   {
     title: "The Basics of Power BI Webinar",
