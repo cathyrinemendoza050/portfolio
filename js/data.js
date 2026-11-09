@@ -24,7 +24,7 @@ const PROFILE = {
 
   // Your photo. Put your picture in assets/images/ and change the file name here.
   // Example: "assets/images/me.jpg"
-  photo: "assets/images/profile.jpg?v=2026-11-06",
+  photo: "assets/images/profile.jpg?v=2026-11-09",
 
   // The typing animation in the hero cycles through these (keep 3 or more)
   roles: [
