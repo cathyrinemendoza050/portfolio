@@ -58,7 +58,7 @@
   <!-- Playfair Display (elegant headings), Great Vibes (script accents), Montserrat (body text) -->
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="css/style.css?v=2026-11-09e">
+  <link rel="stylesheet" href="css/style.css?v=2026-11-09f">
 </head>
 
 <body class="is-loading">
@@ -159,25 +159,16 @@
 
     <section id="about" class="section section--alt">
       <div class="container about">
-        <!-- Left: photo in an arch frame with a pink circle behind it -->
-        <div class="about__side reveal reveal--left">
-          <span class="about__circle" aria-hidden="true"></span>
-          <div class="about__photo">
-            <img id="aboutPhoto" src="assets/images/profile.jpg?v=2026-11-06" alt="Photo of Cathyrine R. Mendoza" width="720" height="960" loading="lazy">
-          </div>
-          <span class="photo-sparkle photo-sparkle--1" aria-hidden="true">✦</span>
-          <span class="photo-sparkle photo-sparkle--2" aria-hidden="true">✧</span>
-        </div>
+        <header class="section__head reveal">
+          <span class="section__kicker">Profile</span>
+          <h2 class="section__title">About <span class="script">Me</span></h2>
+          <span class="title-bar" aria-hidden="true"></span>
+        </header>
 
-        <!-- Right: title + bio + interests -->
-        <div class="about__text reveal reveal--right" style="--delay: 120ms">
-          <header class="section__head">
-            <span class="section__kicker">Profile</span>
-            <h2 class="section__title">About <span class="script">Me</span></h2>
-            <span class="title-bar" aria-hidden="true"></span>
-          </header>
-          <div class="about__bio" id="aboutBio"></div>
+        <!-- Each bio paragraph sits in its own arch card (created by main.js) -->
+        <div class="about__bio" id="aboutBio"></div>
 
+        <div class="about__interests reveal" style="--delay: 120ms">
           <h3 class="about__heading">Interests</h3>
           <ul class="pills" id="funFacts"></ul>
         </div>
@@ -276,7 +267,7 @@
   </div>
 
 
-  <script src="js/data.js?v=2026-11-09e"></script>
-  <script src="js/main.js?v=2026-11-09e"></script>
+  <script src="js/data.js?v=2026-11-09f"></script>
+  <script src="js/main.js?v=2026-11-09f"></script>
 </body>
 </html>

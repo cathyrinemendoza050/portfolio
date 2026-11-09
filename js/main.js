@@ -162,16 +162,16 @@ function renderProfile() {
   photo.src = PROFILE.photo;
   photo.alt = `Photo of ${PROFILE.name}`;
 
-  // About Me photo (only changed if aboutPhoto is set in data.js)
-  const aboutPhoto = $("#aboutPhoto");
-  if (aboutPhoto && PROFILE.aboutPhoto) {
-    aboutPhoto.src = PROFILE.aboutPhoto;
-    aboutPhoto.alt = `Photo of ${PROFILE.name}`;
-  }
-
-  // Bio paragraphs
+  // Bio paragraphs: each one goes inside its own arch card
   $("#aboutBio").innerHTML = (PROFILE.bio || [])
-    .map((paragraph) => `<p>${escapeHTML(paragraph)}</p>`)
+    .map((paragraph, i) => `
+      <article class="bio-card reveal" style="--delay: ${i * 120}ms">
+        <div class="bio-card__inner">
+          <span class="bio-card__badge" aria-hidden="true">${i % 2 ? "✧" : "✦"}</span>
+          <p>${escapeHTML(paragraph)}</p>
+        </div>
+        <span class="bio-card__bar" aria-hidden="true"></span>
+      </article>`)
     .join("");
 
   // Fun fact pills

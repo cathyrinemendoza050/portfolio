@@ -850,25 +850,95 @@ textarea {
 
 
 /* =================================================================
-   8. ABOUT — photo on the left, introduction on the right
+   8. ABOUT — bio paragraphs inside arch cards (same look as skill cards)
    ================================================================= */
-.about {
-  display: grid;
-  grid-template-columns: 0.85fr 1.15fr;   /* photo on the left, text on the right */
+.about__bio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.5rem 2rem;
+}
+
+.bio-card {
+  --dome: 150px;                 /* height of the rounded top */
+  position: relative;
+  isolation: isolate;
+  flex: 1 1 340px;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 9px;
+  transition: transform 0.35s var(--smooth);
+}
+
+/* The dark arch outline peeking out behind the card */
+.bio-card::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 55%;
+  border-radius: 50% 50% 0 0 / calc(var(--dome) + 9px) calc(var(--dome) + 9px) 0 0;
+  background: var(--arch-line);
+}
+
+/* The light arch card itself */
+.bio-card__inner {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 4rem;
+  margin: 0 9px;
+  padding: 2.4rem 2.2rem 2rem;
+  border-radius: 50% 50% 0 0 / var(--dome) var(--dome) 0 0;
+  background: var(--surface);
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow 0.35s ease;
 }
 
-.about .section__head { margin-bottom: 2rem; }
+/* Round sparkle badge at the top of the arch */
+.bio-card__badge {
+  display: grid;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  margin-bottom: 1.4rem;
+  border-radius: 50%;
+  background: var(--arch-line);
+  color: var(--surface);
+  font-size: 1.5rem;
+  line-height: 1;
+  box-shadow: var(--shadow-sm);
+}
 
-.about__bio p {
+.bio-card p {
+  margin: 0;
   color: var(--text);
-  text-align: justify;
-  hyphens: auto;
+  font-size: 0.95rem;
+  line-height: 1.8;
 }
+
+/* Thick bar along the bottom */
+.bio-card__bar {
+  height: 12px;
+  background: var(--arch-line);
+}
+
+.bio-card:hover { transform: translateY(-6px); }
+.bio-card:hover .bio-card__inner { box-shadow: var(--shadow-lg); }
+
+.about__interests {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.about__interests .pills { justify-content: center; }
 
 .about__heading {
-  margin: 1.8rem 0 0.9rem;
+  margin: 0 0 0.9rem;
   font-size: 1.25rem;
 }
 
@@ -893,47 +963,6 @@ textarea {
   background: var(--tint);
   transform: translateY(-2px);
 }
-
-.about__side {
-  position: relative;
-  display: grid;
-  place-items: center;
-  padding: 2rem 0;
-}
-
-/* Pink circle behind the photo */
-.about__circle {
-  position: absolute;
-  width: min(400px, 100%);
-  aspect-ratio: 1;
-  border-radius: 50%;
-  background: var(--circle);
-}
-
-/* About photo in an arch frame (same style as the home page photo) */
-.about__photo {
-  position: relative;
-  width: min(320px, 82%);
-  aspect-ratio: 3 / 4;   /* matches a portrait photo, so nothing gets cut off */
-  overflow: hidden;
-  border: 6px solid var(--surface);
-  border-radius: 999px 999px var(--radius-lg) var(--radius-lg);
-  background: var(--surface);
-  box-shadow: var(--shadow-lg);
-}
-
-.about__photo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.6s var(--smooth);
-}
-
-.about__photo:hover img { transform: scale(1.03); }
-
-/* Sparkles next to the About photo */
-.about__side .photo-sparkle--1 { top: 12%;    left: 8%; }
-.about__side .photo-sparkle--2 { bottom: 16%; right: 8%; left: auto; }
 
 
 /* =================================================================
@@ -1569,8 +1598,7 @@ textarea {
   animation: bar-grow 0.9s var(--smooth) 0.35s both;
 }
 
-.hero.section-arrive .hero__photo,
-.section-arrive .about__photo {
+.hero.section-arrive .hero__photo {
   animation: reveal-zoom 0.8s var(--smooth) 0.2s both;
 }
 
@@ -1694,12 +1722,6 @@ textarea {
     order: -1;               /* photo on top */
     width: min(260px, 64vw);
   }
-
-  .about {
-    grid-template-columns: 1fr;
-  }
-
-  .about { gap: 2.5rem; }
 }
 
 /* Phones */
@@ -1717,7 +1739,8 @@ textarea {
 
   .title-bar { width: 110px; height: 8px; }
 
-  .about__bio p { text-align: left; }
+  .bio-card { --dome: 110px; flex-basis: 100%; }
+  .bio-card__inner { padding: 2rem 1.4rem 1.6rem; }
 
   .skill-card { flex-basis: 260px; max-width: 300px; }
 
