@@ -128,13 +128,8 @@ All colors are CSS variables at the top of **`css/style.css`** (`--pink`, `--pur
 
 ---
 
-## 📬 Making the contact form really send emails (optional)
+## 📬 Contact form messages
 
-Right now the form only shows a "Message sent! 💌" toast and doesn't send anything. To receive real messages for free:
+The contact form sends messages through [Formspree](https://formspree.io). To read them, log in at formspree.io and open the form; each message is also emailed to the address on the Formspree account.
 
-1. Sign up at [formspree.io](https://formspree.io) and create a form. You'll get a URL like `https://formspree.io/f/abcdwxyz`.
-2. In `index.html`, change `<form ... id="contactForm">` to:
-   ```html
-   <form ... id="contactForm" action="https://formspree.io/f/abcdwxyz" method="POST">
-   ```
-3. In `js/main.js` §17, replace the `setTimeout(...)` part with a `fetch(form.action, { method: "POST", body: new FormData(form), headers: { Accept: "application/json" } })` call.
+The form's address is the `action="https://formspree.io/f/..."` on `<form id="contactForm">` in `index.html`. To use a different Formspree form, change the ID at the end of that URL.

@@ -23,8 +23,7 @@
    14. Button ripple
    15. Click splash (hearts & sparkles)
    16. Cursor sparkle trail
-   17. Contact form + toast
-   18. Start everything!
+   17. Start everything!
    ================================================================= */
 
 
@@ -869,45 +868,7 @@ function initCursorTrail() {
 
 
 /* =================================================================
-   17. CONTACT FORM + TOAST
-   Frontend only: the message isn't really emailed anywhere.
-   (See README.md for how to connect a free service like Formspree.)
-   ================================================================= */
-let toastTimer;
-
-function showToast(message) {
-  const toast = $("#toast");
-  toast.textContent = message;
-  toast.classList.add("is-visible");
-  clearTimeout(toastTimer);
-  toastTimer = setTimeout(() => toast.classList.remove("is-visible"), 3500);
-}
-
-function initContactForm() {
-  const form = $("#contactForm");
-  const button = $("button[type='submit']", form);
-
-  // "submit" only fires once all required fields are filled in correctly
-  form.addEventListener("submit", (event) => {
-    event.preventDefault();   // stop the page from reloading
-
-    const name = form.elements.name.value.trim();
-    const originalText = button.textContent;
-    button.disabled = true;
-    button.textContent = "Sending…";
-
-    setTimeout(() => {
-      showToast(`Thank you, ${name || "there"}. Your message has been recorded.`);
-      form.reset();
-      button.disabled = false;
-      button.textContent = originalText;
-    }, 900);
-  });
-}
-
-
-/* =================================================================
-   18. START EVERYTHING!
+   17. START EVERYTHING!
    ================================================================= */
 initThemeToggle();
 initNavbar();
@@ -917,7 +878,6 @@ initRipple();
 initClickSplash();
 initCursorTrail();
 initHeroBubbles();
-initContactForm();
 
 if (dataLoaded) {
   renderProfile();

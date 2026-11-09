@@ -14,7 +14,7 @@
     9. Achievements + modal
    10. Skills
    11. Projects
-   12. Contact + toast
+   12. Contact
    13. Footer + back-to-top
    14. Effects (ripple, scroll reveal)
    15. Keyframes
@@ -1372,14 +1372,15 @@ textarea {
 
 
 /* =================================================================
-   12. CONTACT + TOAST
+   12. CONTACT
    ================================================================= */
 .contact {
-  display: grid;
-  grid-template-columns: 0.9fr 1.1fr;
-  align-items: start;
-  gap: 1.75rem;
+  max-width: 640px;
+  margin-inline: auto;
+  text-align: center;
 }
+
+.contact .socials { justify-content: center; }
 
 .contact__info h3 { font-size: 1.6rem; }
 .contact__info p { color: var(--text-soft); }
@@ -1456,72 +1457,6 @@ textarea {
 
 .social-link:hover::after {
   opacity: 1;
-  transform: translate(-50%, 0);
-}
-
-.form-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-}
-
-.form-group { margin-bottom: 1.15rem; }
-
-.form-label {
-  display: block;
-  margin-bottom: 0.4rem;
-  font-size: 0.72rem;
-  font-weight: 600;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--heading);
-}
-
-.form-input {
-  width: 100%;
-  padding: 0.8rem 1rem;
-  border: 1px solid var(--border);
-  border-radius: var(--radius-sm);
-  background: var(--input-bg);
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
-}
-
-.form-input::placeholder { color: var(--text-soft); opacity: 0.7; }
-
-.form-input:focus {
-  outline: none;
-  border-color: var(--rose);
-  box-shadow: 0 0 0 4px var(--accent-soft);
-}
-
-textarea.form-input {
-  min-height: 140px;
-  resize: vertical;
-}
-
-.toast {
-  position: fixed;
-  left: 50%;
-  bottom: 1.5rem;
-  z-index: 1800;
-  max-width: calc(100% - 2rem);
-  padding: 0.85rem 1.4rem;
-  border-radius: var(--radius-pill);
-  background: var(--plum);
-  color: #fff;
-  font-size: 0.9rem;
-  font-weight: 500;
-  text-align: center;
-  box-shadow: var(--shadow-lg);
-  opacity: 0;
-  visibility: hidden;
-  transform: translate(-50%, calc(100% + 1.5rem));
-  transition: transform 0.35s var(--smooth), opacity 0.25s ease, visibility 0.25s ease;
-}
-
-.toast.is-visible {
-  opacity: 1;
-  visibility: visible;
   transform: translate(-50%, 0);
 }
 
@@ -1760,8 +1695,7 @@ textarea.form-input {
     width: min(260px, 64vw);
   }
 
-  .about,
-  .contact {
+  .about {
     grid-template-columns: 1fr;
   }
 
@@ -1784,8 +1718,6 @@ textarea.form-input {
   .title-bar { width: 110px; height: 8px; }
 
   .about__bio p { text-align: left; }
-
-  .form-row { grid-template-columns: 1fr; gap: 0; }
 
   .skill-card { flex-basis: 260px; max-width: 300px; }
 
