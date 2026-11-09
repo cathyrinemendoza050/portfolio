@@ -189,7 +189,7 @@ const PROJECTS = [
       "assets/images/botoko-3-receipt.jpg",
       "assets/images/botoko-4-results.jpg",
     ],
-    tags: ["Web App", "Voting System", "Live Results", "HTML", "CSS", "JavaScript", "Python", "Flask"],
+    tags: ["Web App", "HTML", "CSS", "JavaScript", "Python", "Flask"],
     link: "",
   },
   {
